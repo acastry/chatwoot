@@ -42,9 +42,7 @@
         <fluent-icon v-else icon="chevron-right" />
       </button>
     </form>
-    <h2>zedijzoeid zeodjzoeidjozied zeodizoedij</h2>
     <h5 class="csat_message"
-      v-if="isFeedbackSubmitted&&shouldShowCsatMesage"
        v-html="parsedCsatMessage"
     ></h5>
   </div>
