@@ -3,9 +3,9 @@
 - name: INSTALLATION_NAME
   value: 'Atoomo'
 - name: LOGO_THUMBNAIL
-  value: '/brand-assets/atoomo.svg'
+  value: '/brand-assets/atoomo_picto.svg?1'
 - name: LOGO
-  value: '/brand-assets/atoomo_logo.svg'
+  value: '/brand-assets/atoomo_logo.svg?1'
 - name: BRAND_URL
   value: 'https://atoomo.io'
 - name: WIDGET_BRAND_URL
