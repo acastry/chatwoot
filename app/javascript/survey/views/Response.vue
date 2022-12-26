@@ -92,7 +92,7 @@ export default {
       errorMessage: null,
       selectedRating: null,
       feedbackMessage: '',
-      csatMessage: 'dadadaadadadada',
+      csatMessage: '',
       isUpdating: false,
       logo: '',
       inboxName: '',
