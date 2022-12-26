@@ -125,13 +125,13 @@ export default {
       } = this.messageContentAttributes;
       this.selectedRating = rating;
       this.feedback = feedback_message;
-      try{
-      const csatmessage = await getCsatMessage({ uuid: this.messageId });
-      this.csatMessage = csatmessage?.data?.csat_message;
-      } catch (error) {
-      } finally {
-      }
     }
+    try{
+    const csatmessage = await getCsatMessage({ uuid: this.messageId });
+    this.csatMessage = csatmessage?.data?.csat_message;
+    } catch (error) {
+    } finally {
+    }    
   },
 
   methods: {
