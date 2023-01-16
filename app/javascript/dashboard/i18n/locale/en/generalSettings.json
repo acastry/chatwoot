@@ -9,6 +9,14 @@
     },
     "FORM": {
       "ERROR": "Please fix form errors",
+      "ATOOMO": {
+        "CALENDAR_PAGE": {
+          "TITLE": "CALENDAR URL",
+          "LABEL": "CALENDAR URL",
+          "PLACEHOLDER": "CALENDAR URL",
+          "NOTE": ""
+        }
+      },
       "GENERAL_SECTION": {
         "TITLE": "General settings",
         "NOTE": ""

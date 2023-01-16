@@ -95,6 +95,32 @@
           <woot-code :script="getAccountId" />
         </div>
       </div>
+
+
+      <div class="atoomo--settings--row row">
+        <div class="columns small-3">
+          <h4 class="block-title">
+            {{ $t('GENERAL_SETTINGS.FORM.ATOOMO.CALENDAR_PAGE.TITLE') }}
+          </h4>
+          <p>
+            {{ $t('GENERAL_SETTINGS.FORM.ATOOMO.CALENDAR_PAGE.NOTE') }}
+          </p>
+        </div>
+        <div class="columns small-9 medium-5">
+          <label >
+            {{ $t('GENERAL_SETTINGS.FORM.ATOOMO.CALENDAR_PAGE.LABEL') }}
+            <input
+              v-model="calendar_page"
+              type="text"
+              :placeholder="$t('GENERAL_SETTINGS.FORM.ATOOMO.CALENDAR_PAGE.PLACEHOLDER')"
+            />
+          </label>
+        </div>
+      </div>
+
+
+
+
       <div class="current-version">
         <div>{{ `v${globalConfig.appVersion}` }}</div>
         <div v-if="hasAnUpdateAvailable && globalConfig.displayManifest">
@@ -132,6 +158,7 @@ export default {
     return {
       id: '',
       name: '',
+      calendar_page: '',
       locale: 'en',
       domain: '',
       supportEmail: '',
@@ -209,6 +236,7 @@ export default {
         await this.$store.dispatch('accounts/get');
         const {
           name,
+          calendar_page,
           locale,
           id,
           domain,
@@ -221,6 +249,7 @@ export default {
 
         this.$root.$i18n.locale = locale;
         this.name = name;
+        this.calendar_page = calendar_page;
         this.locale = locale;
         this.id = id;
         this.domain = domain;
@@ -244,6 +273,7 @@ export default {
         await this.$store.dispatch('accounts/update', {
           locale: this.locale,
           name: this.name,
+          calendar_page: this.calendar_page,
           domain: this.domain,
           support_email: this.supportEmail,
           auto_resolve_duration: this.autoResolveDuration,
