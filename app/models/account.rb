@@ -4,6 +4,7 @@
 #
 #  id                    :integer          not null, primary key
 #  auto_resolve_duration :integer
+#  calendar_page         :string
 #  custom_attributes     :jsonb
 #  domain                :string(100)
 #  feature_flags         :integer          default(0), not null

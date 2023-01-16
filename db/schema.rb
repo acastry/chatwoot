@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_12_19_162759) do
+ActiveRecord::Schema.define(version: 2023_01_16_152227) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "pgcrypto"
-  enable_extension "plpgsql"
+  enable_extension "plpgsql" 
 
   create_table "access_tokens", force: :cascade do |t|
     t.string "owner_type"
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(version: 2022_12_19_162759) do
     t.jsonb "limits", default: {}
     t.jsonb "custom_attributes", default: {}
     t.integer "status", default: 0
+    t.string "calendar_page"
     t.index ["status"], name: "index_accounts_on_status"
   end
 
