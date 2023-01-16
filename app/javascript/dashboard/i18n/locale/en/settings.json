@@ -193,6 +193,9 @@
     "CONTACTS": "Contacts",
     "HOME": "Home",
     "AGENTS": "Agents",
+    "ATOOMO": {
+      "CALENDAR": "CALENDAR"
+    },
     "AGENT_BOTS": "Bots",
     "INBOXES": "Inboxes",
     "NOTIFICATIONS": "Notifications",
