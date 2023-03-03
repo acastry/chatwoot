@@ -11,9 +11,9 @@
       "ERROR": "Veuillez corriger les erreurs du formulaire",
       "ATOOMO": {
         "CALENDAR_PAGE": {
-          "TITLE": "CALENDAR URL",
-          "LABEL": "CALENDAR URL",
-          "PLACEHOLDER": "CALENDAR URL",
+          "TITLE": "Agenda URL",
+          "LABEL": "Agenda URL",
+          "PLACEHOLDER": "Agenda URL",
           "NOTE": ""
         }
       },      
