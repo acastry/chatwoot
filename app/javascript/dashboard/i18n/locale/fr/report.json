@@ -3,7 +3,7 @@
     "HEADER": "Conversations",
     "LOADING_CHART": "Chargement des données du graphique ...",
     "NO_ENOUGH_DATA": "Nous n'avons pas reçu assez de points de données pour générer un rapport. Veuillez réessayer plus tard.",
-    "DOWNLOAD_AGENT_REPORTS": "Télécharger les rapports de l'agent",
+    "DOWNLOAD_AGENT_REPORTS": "Télécharger les rapports du conseiller",
     "METRICS": {
       "CONVERSATIONS": {
         "NAME": "Conversations",
@@ -117,11 +117,11 @@
     "BUSINESS_HOURS": "Heures de bureau"
   },
   "AGENT_REPORTS": {
-    "HEADER": "Présentation des agents",
+    "HEADER": "Présentation des conseillers",
     "LOADING_CHART": "Chargement des données du graphique ...",
     "NO_ENOUGH_DATA": "Nous n'avons pas reçu assez de points de données pour générer un rapport. Veuillez réessayer plus tard.",
-    "DOWNLOAD_AGENT_REPORTS": "Télécharger les rapports de l'agent",
-    "FILTER_DROPDOWN_LABEL": "Sélectionner un agent",
+    "DOWNLOAD_AGENT_REPORTS": "Télécharger les rapports du conseiller",
+    "FILTER_DROPDOWN_LABEL": "Sélectionner un conseiller",
     "METRICS": {
       "CONVERSATIONS": {
         "NAME": "Conversations",
@@ -390,7 +390,7 @@
     "DOWNLOAD": "Télécharger les rapports de satisfaction",
     "FILTERS": {
       "AGENTS": {
-        "PLACEHOLDER": "Choisissez des agents"
+        "PLACEHOLDER": "Choisissez des conseillers"
       }
     },
     "TABLE": {
@@ -423,22 +423,22 @@
       "HEADER": "Conversations ouvertes",
       "LOADING_MESSAGE": "Chargement des métriques de conversations...",
       "OPEN": "Ouvert",
-      "UNATTENDED": "Unattended",
+      "UNATTENDED": "Non surveillé",
       "UNASSIGNED": "Non assigné"
     },
     "AGENT_CONVERSATIONS": {
-      "HEADER": "Conversations par agent",
-      "LOADING_MESSAGE": "Chargement des métriques des agents...",
-      "NO_AGENTS": "Il n'y a pas de conversations par agents",
+      "HEADER": "Conversations par conseiller",
+      "LOADING_MESSAGE": "Chargement des métriques des conseillers...",
+      "NO_AGENTS": "Il n'y a pas de conversations par conseillers",
       "TABLE_HEADER": {
         "AGENT": "Agent",
         "OPEN": "OPEN",
-        "UNATTENDED": "Unattended",
+        "UNATTENDED": "Non surveillé",
         "STATUS": "État"
       }
     },
     "AGENT_STATUS": {
-      "HEADER": "Agent status",
+      "HEADER": "Statut du conseiller",
       "ONLINE": "En ligne",
       "BUSY": "Occupé(e)",
       "OFFLINE": "Hors-ligne"

@@ -1,17 +1,17 @@
 {
   "AGENT_MGMT": {
-    "HEADER": "Agents",
-    "HEADER_BTN_TXT": "Ajouter un agent",
-    "LOADING": "Récupération de la liste des agents",
-    "SIDEBAR_TXT": "<p><b>Agents</b></p> <p> Un <b>agent</b> est un membre de votre équipe d'assistance clientèle. </p><p> Les agents pourront voir et répondre aux messages de vos utilisateurs. La liste montre tous les agents actuellement dans votre compte. </p><p> Cliquez sur <b>Ajouter un agent</b> pour ajouter un nouvel agent. L'agent que vous ajoutez recevra un courriel avec un lien de confirmation pour activer son compte, après quoi il pourra accéder à Atoomo et répondre aux messages. </p><p> L'accès aux fonctionnalités de Atoomo est basé sur les rôles suivants. </p><p> <b>Agent</b> - Les agents ayant ce rôle ne peuvent accéder qu'aux boîtes de réception, aux rapports et aux conversations. Ils peuvent assigner des conversations à d'autres agents ou eux-mêmes et résoudre des conversations.</p><p> <b>Administrateur</b> - Administrateur aura accès à toutes les fonctionnalités de Atoomo activées pour votre compte, y compris les paramètres, ainsi que tous les privilèges d'un agent normal.</p>",
+    "HEADER": "Conseillers",
+    "HEADER_BTN_TXT": "Ajouter un conseiller",
+    "LOADING": "Récupération de la liste des conseillers",
+    "SIDEBAR_TXT": "<p><b>Agents</b></p> <p> Un <b>conseiller</b> est un membre de votre équipe d'assistance clientèle. </p><p> Les conseillers pourront voir et répondre aux messages de vos utilisateurs. La liste montre tous les conseillers actuellement dans votre compte. </p><p> Cliquez sur <b>Ajouter un conseiller</b> pour ajouter un nouveau conseiller. Le conseiller que vous ajoutez recevra un courriel avec un lien de confirmation pour activer son compte, après quoi il pourra accéder à Atoomo et répondre aux messages. </p><p> L'accès aux fonctionnalités de Atoomo est basé sur les rôles suivants. </p><p> <b>Agent</b> - Les conseillers ayant ce rôle ne peuvent accéder qu'aux boîtes de réception, aux rapports et aux conversations. Ils peuvent assigner des conversations à d'autres agents ou eux-mêmes et résoudre des conversations.</p><p> <b>Administrateur</b> - Administrateur aura accès à toutes les fonctionnalités de Atoomo activées pour votre compte, y compris les paramètres, ainsi que tous les privilèges d'un agent normal.</p>",
     "AGENT_TYPES": {
       "ADMINISTRATOR": "Administrateur",
       "AGENT": "Agent"
     },
     "LIST": {
-      "404": "Il n'y a aucun agent associé à ce compte",
-      "TITLE": "Gérer les agents de votre équipe",
-      "DESC": "Vous pouvez ajouter/supprimer des agents à votre équipe.",
+      "404": "Il n'y a aucun conseillers associé à ce compte",
+      "TITLE": "Gérer les conseillers de votre équipe",
+      "DESC": "Vous pouvez ajouter/supprimer des conseillers à votre équipe.",
       "NAME": "Nom",
       "EMAIL": "COURRIEL",
       "STATUS": "État",
@@ -20,13 +20,13 @@
       "VERIFICATION_PENDING": "En attente de vérification"
     },
     "ADD": {
-      "TITLE": "Ajouter un agent à votre équipe",
+      "TITLE": "Ajouter un conseiller à votre équipe",
       "DESC": "Vous pouvez ajouter des personnes qui pourront gérer le support de vos boîtes de réception.",
       "CANCEL_BUTTON_TEXT": "Annuler",
       "FORM": {
         "NAME": {
-          "LABEL": "Nom de l'agent",
-          "PLACEHOLDER": "Veuillez entrer un nom de l'agent"
+          "LABEL": "Nom du conseiller",
+          "PLACEHOLDER": "Veuillez entrer un nom du conseiller"
         },
         "AGENT_TYPE": {
           "LABEL": "Rôle",
@@ -35,20 +35,20 @@
         },
         "EMAIL": {
           "LABEL": "Adresse de courriel",
-          "PLACEHOLDER": "Veuillez entrer l'adresse de courriel de l'agent"
+          "PLACEHOLDER": "Veuillez entrer l'adresse de courriel du conseiller"
         },
-        "SUBMIT": "Ajouter l'agent"
+        "SUBMIT": "Ajouter le conseiller"
       },
       "API": {
-        "SUCCESS_MESSAGE": "Agent ajouté avec succès",
-        "EXIST_MESSAGE": "Adresse de courriel de l'agent déjà utilisée, veuillez essayer une autre adresse de courriel",
+        "SUCCESS_MESSAGE": "Conseiller ajouté avec succès",
+        "EXIST_MESSAGE": "Adresse de courriel du conseiller déjà utilisée, veuillez essayer une autre adresse de courriel",
         "ERROR_MESSAGE": "Impossible de se connecter au serveur Woot, veuillez réessayer plus tard"
       }
     },
     "DELETE": {
       "BUTTON_TEXT": "Supprimer",
       "API": {
-        "SUCCESS_MESSAGE": "Agent supprimé avec succès",
+        "SUCCESS_MESSAGE": "Conseiller supprimé avec succès",
         "ERROR_MESSAGE": "Impossible de se connecter au serveur Woot, veuillez réessayer plus tard"
       },
       "CONFIRM": {
@@ -59,34 +59,34 @@
       }
     },
     "EDIT": {
-      "TITLE": "Modifier l'agent",
+      "TITLE": "Modifier le conseiller",
       "FORM": {
         "NAME": {
-          "LABEL": "Nom de l'agent",
-          "PLACEHOLDER": "Veuillez saisir le nom de l'agent"
+          "LABEL": "Nom du conseiller",
+          "PLACEHOLDER": "Veuillez saisir le nom du conseiller"
         },
         "AGENT_TYPE": {
-          "LABEL": "Type d'agent",
+          "LABEL": "Type de conseiller",
           "PLACEHOLDER": "Veuillez sélectionner un rôle",
           "ERROR": "Le rôle est requis"
         },
         "EMAIL": {
           "LABEL": "Adresse de courriel",
-          "PLACEHOLDER": "Veuillez entrer l'adresse de courriel de l'agent"
+          "PLACEHOLDER": "Veuillez entrer l'adresse de courriel du conseiller"
         },
-        "SUBMIT": "Modifier l'agent"
+        "SUBMIT": "Modifier le conseiller"
       },
       "BUTTON_TEXT": "Modifier",
       "CANCEL_BUTTON_TEXT": "Annuler",
       "API": {
-        "SUCCESS_MESSAGE": "Agent mis à jour avec succès",
-        "ERROR_MESSAGE": "Impossible de se connecter au serveur Woot, veuillez réessayer plus tard"
+        "SUCCESS_MESSAGE": "Conseiller mis à jour avec succès",
+        "ERROR_MESSAGE": "Impossible de se connecter au serveur, veuillez réessayer plus tard"
       },
       "PASSWORD_RESET": {
         "ADMIN_RESET_BUTTON": "Réinitialiser le mot de passe",
-        "ADMIN_SUCCESS_MESSAGE": "Un courriel avec les instructions de réinitialisation du mot de passe a été envoyé à l'agent",
-        "SUCCESS_MESSAGE": "Le mot de passe de l'agent a été réinitialisé avec succès",
-        "ERROR_MESSAGE": "Impossible de se connecter au serveur Woot, veuillez réessayer plus tard"
+        "ADMIN_SUCCESS_MESSAGE": "Un courriel avec les instructions de réinitialisation du mot de passe a été envoyé au conseiller",
+        "SUCCESS_MESSAGE": "Le mot de passe du conseiller a été réinitialisé avec succès",
+        "ERROR_MESSAGE": "Impossible de se connecter au serveur, veuillez réessayer plus tard"
       }
     },
     "SEARCH": {
@@ -95,7 +95,7 @@
     "MULTI_SELECTOR": {
       "PLACEHOLDER": "Aucun",
       "TITLE": {
-        "AGENT": "Sélectionner un agent",
+        "AGENT": "Sélectionner un conseiller",
         "TEAM": "Sélectionner une équipe"
       },
       "SEARCH": {

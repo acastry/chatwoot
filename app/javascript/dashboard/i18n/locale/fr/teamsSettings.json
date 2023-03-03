@@ -2,7 +2,7 @@
   "TEAMS_SETTINGS": {
     "NEW_TEAM": "Créer une nouvelle équipe",
     "HEADER": "Équipes",
-    "SIDEBAR_TXT": "<p><b>Équipes</b></p> <p>Les équipes vous permettent d'organiser vos agents en groupes en fonction de leurs responsabilités. <br /> Un utilisateur peut faire partie de plusieurs équipes. Vous pouvez assigner des conversations à une équipe lorsque vous travaillez en collaboration. </p>",
+    "SIDEBAR_TXT": "<p><b>Équipes</b></p> <p>Les équipes vous permettent d'organiser vos conseillers en groupes en fonction de leurs responsabilités. <br /> Un utilisateur peut faire partie de plusieurs équipes. Vous pouvez assigner des conversations à une équipe lorsque vous travaillez en collaboration. </p>",
     "LIST": {
       "404": "Il n'y a aucune équipe créée sur ce compte.",
       "EDIT_TEAM": "Modifier l'équipe"
@@ -13,20 +13,20 @@
         "DESC": "Ajoutez un titre et une description à votre nouvelle équipe."
       },
       "AGENTS": {
-        "BUTTON_TEXT": "Ajouter un agent à votre équipe",
-        "TITLE": "Ajouter des agents à l'équipe - %{teamName}",
-        "DESC": "Ajouter des agents à votre équipe nouvellement créée. Cela vous permet de collaborer en équipe sur les conversations, d'être informé des nouveaux événements dans la même conversation."
+        "BUTTON_TEXT": "Ajouter un conseiller à votre équipe",
+        "TITLE": "Ajouter des conseillers à l'équipe - %{teamName}",
+        "DESC": "Ajouter des conseillers à votre équipe nouvellement créée. Cela vous permet de collaborer en équipe sur les conversations, d'être informé des nouveaux événements dans la même conversation."
       },
       "WIZARD": [
         {
           "title": "Créer",
           "route": "settings_teams_new",
-          "body": "Créer une nouvelle équipe d'agents."
+          "body": "Créer une nouvelle équipe d'conseillers."
         },
         {
-          "title": "Ajouter des agents",
-          "route": "settings_teams_add_agents",
-          "body": "Ajouter des agents à l'équipe."
+          "title": "Ajouter des conseillers",
+          "route": "settings_teams_add_conseillers",
+          "body": "Ajouter des conseillers à l'équipe."
         },
         {
           "title": "Terminer",
@@ -42,9 +42,9 @@
         "BUTTON_TEXT": "Mettre à jour l'équipe"
       },
       "AGENTS": {
-        "BUTTON_TEXT": "Mettre à jour les agents dans l'équipe",
-        "TITLE": "Ajouter des agents à l'équipe - %{teamName}",
-        "DESC": "Ajouter des agents à votre équipe nouvellement créée. Tous les agents ajoutés seront notifiés lorsqu'une conversation est assignée à cette équipe."
+        "BUTTON_TEXT": "Mettre à jour les conseillers dans l'équipe",
+        "TITLE": "Ajouter des conseillers à l'équipe - %{teamName}",
+        "DESC": "Ajouter des conseillers à votre équipe nouvellement créée. Tous les conseillers ajoutés seront notifiés lorsqu'une conversation est assignée à cette équipe."
       },
       "WIZARD": [
         {
@@ -53,9 +53,9 @@
           "body": "Changer le nom, la description et d'autres détails."
         },
         {
-          "title": "Modifier les agents",
+          "title": "Modifier les conseillers",
           "route": "settings_teams_edit_members",
-          "body": "Modifier les agents dans votre équipe."
+          "body": "Modifier les conseillers dans votre équipe."
         },
         {
           "title": "Terminer",
@@ -68,22 +68,22 @@
       "ERROR_MESSAGE": "Impossible d'enregistrer les détails de l'équipe. Veuillez réessayer."
     },
     "AGENTS": {
-      "AGENT": "AGENT",
+      "AGENT": "CONSEILLER",
       "EMAIL": "COURRIEL",
-      "BUTTON_TEXT": "Ajouter des agents",
-      "ADD_AGENTS": "Ajout d'agents à votre équipe...",
+      "BUTTON_TEXT": "Ajouter des conseillers",
+      "ADD_AGENTS": "Ajout d'conseillers à votre équipe...",
       "SELECT": "sélectionner",
-      "SELECT_ALL": "sélectionner tous les agents",
-      "SELECTED_COUNT": "%{selected} agents sur %{total} sélectionnés."
+      "SELECT_ALL": "sélectionner tous les conseillers",
+      "SELECTED_COUNT": "%{selected} conseillers sur %{total} sélectionnés."
     },
     "ADD": {
-      "TITLE": "Ajouter des agents à l'équipe - %{teamName}",
-      "DESC": "Ajouter des agents à votre équipe nouvellement créée. Cela vous permet de collaborer en équipe sur les conversations, d'être informé des nouveaux événements dans la même conversation.",
+      "TITLE": "Ajouter des conseillers à l'équipe - %{teamName}",
+      "DESC": "Ajouter des conseillers à votre équipe nouvellement créée. Cela vous permet de collaborer en équipe sur les conversations, d'être informé des nouveaux événements dans la même conversation.",
       "SELECT": "sélectionner",
-      "SELECT_ALL": "sélectionner tous les agents",
-      "SELECTED_COUNT": "%{selected} agents sur %{total} sélectionnés.",
-      "BUTTON_TEXT": "Ajouter des agents",
-      "AGENT_VALIDATION_ERROR": "Sélectionnez au moins un agent."
+      "SELECT_ALL": "sélectionner tous les conseillers",
+      "SELECTED_COUNT": "%{selected} conseillers sur %{total} sélectionnés.",
+      "BUTTON_TEXT": "Ajouter des conseillers",
+      "AGENT_VALIDATION_ERROR": "Sélectionnez au moins un conseiller."
     },
     "FINISH": {
       "TITLE": "Votre équipe est prête !",

@@ -2,8 +2,8 @@
   "CONVERSATION": {
     "SELECT_A_CONVERSATION": "Veuillez sélectionner une conversation à partir du panneau de gauche",
     "CSAT_REPLY_MESSAGE": "Veuillez évaluer la conversation",
-    "404": "Sorry, we cannot find the conversation. Please try again",
-    "SWITCH_VIEW_LAYOUT": "Switch the layout",
+    "404": "Désolé, nous ne pouvons pas trouver cette conversation. Veuillez essayer encore",
+    "SWITCH_VIEW_LAYOUT": "Changer de mise en page",
     "DASHBOARD_APP_TAB_MESSAGES": "Messages",
     "UNVERIFIED_SESSION": "L'identité de cet utilisateur n'est pas vérifiée",
     "NO_MESSAGE_1": "Oh oh ! Il semble qu'il n'y ait aucun message de clients dans votre boîte de réception.",
@@ -34,8 +34,8 @@
     "REPLYING_TO": "Vous répondez à :",
     "REMOVE_SELECTION": "Supprimer la sélection",
     "DOWNLOAD": "Télécharger",
-    "UNKNOWN_FILE_TYPE": "Unknown File",
-    "SAVE_CONTACT": "Save",
+    "UNKNOWN_FILE_TYPE": "Fichier inconnu",
+    "SAVE_CONTACT": "Enregistrer",
     "UPLOADING_ATTACHMENTS": "Envoi des pièces jointes...",
     "SUCCESS_DELETE_MESSAGE": "Le message a bien été supprimé",
     "FAIL_DELETE_MESSSAGE": "Impossible de supprimer le message ! Veuillez réessayez",
@@ -43,8 +43,8 @@
     "RATING_TITLE": "Note",
     "FEEDBACK_TITLE": "Commentaires",
     "CARD": {
-      "SHOW_LABELS": "Show labels",
-      "HIDE_LABELS": "Hide labels"
+      "SHOW_LABELS": "Afficher les étiquettes",
+      "HIDE_LABELS": "Masquer les étiquettes"
     },
     "HEADER": {
       "RESOLVE_ACTION": "Résoudre",
@@ -68,31 +68,31 @@
     },
     "CARD_CONTEXT_MENU": {
       "PENDING": "Marquer comme en attente",
-      "RESOLVED": "Mark as resolved",
-      "MARK_AS_UNREAD": "Mark as unread",
+      "RESOLVED": "Marquer comme résolu",
+      "MARK_AS_UNREAD": "Marquer comme non-lu",
       "REOPEN": "Reprendre la conversation",
       "SNOOZE": {
         "TITLE": "Snooze",
-        "NEXT_REPLY": "Until next reply",
-        "TOMORROW": "Until tomorrow",
-        "NEXT_WEEK": "Until next week"
+        "NEXT_REPLY": "Jusqu'à la prochaine réponse",
+        "TOMORROW": "Jusqu'à demain",
+        "NEXT_WEEK": "Jusqu'à la semaine prochaine"
       },
-      "ASSIGN_AGENT": "Assign agent",
-      "ASSIGN_LABEL": "Assign label",
-      "AGENTS_LOADING": "Loading agents...",
-      "ASSIGN_TEAM": "Assign team",
+      "ASSIGN_AGENT": "Assigner les conseillers",
+      "ASSIGN_LABEL": "Assigner les étiquettes",
+      "AGENTS_LOADING": "Charger les conseillers...",
+      "ASSIGN_TEAM": "Assigner l'équipe",
       "API": {
         "AGENT_ASSIGNMENT": {
-          "SUCCESFUL": "Conversation id %{conversationId} assigned to \"%{agentName}\"",
-          "FAILED": "Couldn't assign agent. Please try again."
+          "SUCCESFUL": "Conversation id %{conversationId} assignée à \"%{agentName}\"",
+          "FAILED": "Impossible d'assigner un conseiller. Veuillez réessayer."
         },
         "LABEL_ASSIGNMENT": {
-          "SUCCESFUL": "Assigned label #%{labelName} to conversation id %{conversationId}",
-          "FAILED": "Couldn't assign label. Please try again."
+          "SUCCESFUL": "Etiquette #%{labelName} assignée à la conversation %{conversationId}",
+          "FAILED" : "Impossible d'attribuer le label. Please try again."
         },
         "TEAM_ASSIGNMENT": {
-          "SUCCESFUL": "Assigned team \"%{team}\" to conversation id %{conversationId}",
-          "FAILED": "Couldn't assign team. Please try again."
+          "SUCCESFUL": "Equipe \"%{team}\" assignée à la conversation %{conversationId}",
+          "FAILED" : "Impossible d'affecter l'équipe. Please try again."
         }
       }
     },
@@ -101,7 +101,7 @@
       "ENABLE_SIGN_TOOLTIP": "Activer la signature",
       "DISABLE_SIGN_TOOLTIP": "Désactiver la signature",
       "MSG_INPUT": "Maj + entrée pour une nouvelle ligne. Commencez par '/' pour sélectionner une réponse standardisée.",
-      "PRIVATE_MSG_INPUT": "Maj + entrée pour une nouvelle ligne. Cela ne sera visible que par les agents",
+      "PRIVATE_MSG_INPUT": "Maj + entrée pour une nouvelle ligne. Cela ne sera visible que par les conseillers",
       "MESSAGE_SIGNATURE_NOT_CONFIGURED": "La signature du message n'est pas configurée, veuillez le configurer dans les paramètres du profil.",
       "CLICK_HERE": "Cliquez ici pour mettre à jour"
     },
@@ -158,7 +158,7 @@
     "SEND_FAILED": "Impossible d'envoyer le message ! Réessayez",
     "TRY_AGAIN": "Réessayer",
     "ASSIGNMENT": {
-      "SELECT_AGENT": "Sélectionner un agent",
+      "SELECT_AGENT": "Sélectionner un conseiller",
       "REMOVE": "Supprimer",
       "ASSIGN": "Assigner"
     },
@@ -177,7 +177,7 @@
     "SEND_EMAIL_ERROR": "Une erreur est survenue, veuillez réessayer",
     "FORM": {
       "SEND_TO_CONTACT": "Envoyer la transcription au client",
-      "SEND_TO_AGENT": "Envoyer la transcription à l'agent assigné",
+      "SEND_TO_AGENT": "Envoyer la transcription au conseiller assigné",
       "SEND_TO_OTHER_EMAIL_ADDRESS": "Envoyer la transcription à une autre adresse de courriel",
       "EMAIL": {
         "PLACEHOLDER": "Entrez une adresse de courriel",
@@ -195,7 +195,7 @@
     },
     "TEAM_MEMBERS": {
       "TITLE": "Invitez les membres de votre équipe",
-      "DESCRIPTION": "Puisque vous vous apprêtez à parler à votre client, amenez vos coéquipiers pour vous aider. Vous pouvez inviter vos coéquipiers en ajoutant leurs adresses e-mail à la liste des agents.",
+      "DESCRIPTION": "Puisque vous vous apprêtez à parler à votre client, amenez vos coéquipiers pour vous aider. Vous pouvez inviter vos coéquipiers en ajoutant leurs adresses e-mail à la liste des conseillers.",
       "NEW_LINK": "Cliquez ici pour inviter un membre de l'équipe"
     },
     "INBOXES": {
@@ -210,7 +210,7 @@
     }
   },
   "CONVERSATION_SIDEBAR": {
-    "ASSIGNEE_LABEL": "Agent Assigné",
+    "ASSIGNEE_LABEL": "Conseiller Assigné",
     "SELF_ASSIGN": "M’assigner la conversation",
     "TEAM_LABEL": "Équipe assignée",
     "SELECT": {

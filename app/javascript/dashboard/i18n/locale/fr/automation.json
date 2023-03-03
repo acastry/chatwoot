@@ -3,7 +3,7 @@
     "HEADER": "Automatisations",
     "HEADER_BTN_TXT": "Ajouter une règle d'automatisation",
     "LOADING": "Récupération des règles d'automatisation",
-    "SIDEBAR_TXT": "<p><b>Règles d'automatisation</b> <p>L'automatisation peut remplacer et automatiser les processus existants qui nécessitent des efforts manuels. Vous pouvez faire beaucoup de choses avec l'automatisation, y compris ajouter des étiquettes et assigner des conversations au meilleur agent. Ainsi, l'équipe se concentre sur ce qu'elle fait de mieux et passe plus peu de temps sur les tâches manuelles.</p>",
+    "SIDEBAR_TXT": "<p><b>Règles d'automatisation</b> <p>L'automatisation peut remplacer et automatiser les processus existants qui nécessitent des efforts manuels. Vous pouvez faire beaucoup de choses avec l'automatisation, y compris ajouter des étiquettes et assigner des conversations au meilleur conseiller. Ainsi, l'équipe se concentre sur ce qu'elle fait de mieux et passe plus peu de temps sur les tâches manuelles.</p>",
     "ADD": {
       "TITLE": "Ajouter une règle d'automatisation",
       "SUBMIT": "Créer",

@@ -48,7 +48,7 @@
       "AUTO_RESOLVE_DURATION": {
         "LABEL": "Nombre de jours après qu'un ticket soit automatiquement résolu s'il n'y a pas d'activité",
         "PLACEHOLDER": "30",
-        "ERROR": "Please enter a valid auto resolve duration (minimum 1 day and maximum 999 days)"
+        "ERROR": "Veuillez saisir une durée de résolution automatique valide (minimum 1 jour et maximum 999 jours)"
       },
       "FEATURES": {
         "INBOUND_EMAIL_ENABLED": "La continuité des conversations avec les courriels est activée pour votre compte.",
@@ -56,7 +56,7 @@
       }
     },
     "UPDATE_CHATWOOT": "Une mise à jour %{latestChatwootVersion} de Atoomo est disponible. Veuillez mettre à jour votre instance.",
-    "LEARN_MORE": "Learn more"
+    "LEARN_MORE": "Apprendre plus"
   },
   "FORMS": {
     "MULTISELECT": {
@@ -69,12 +69,12 @@
   "NOTIFICATIONS_PAGE": {
     "HEADER": "Notifications",
     "MARK_ALL_DONE": "Tout marquer comme terminé",
-    "DELETE_TITLE": "deleted",
+    "DELETE_TITLE": "supprimé",
     "UNREAD_NOTIFICATION": {
-      "TITLE": "Unread Notifications",
-      "ALL_NOTIFICATIONS": "View all notifications",
-      "LOADING_UNREAD_MESSAGE": "Loading unread notifications...",
-      "EMPTY_MESSAGE": "You have no unread notifications"
+      "TITLE": "Notifications non-lues",
+      "ALL_NOTIFICATIONS": "Afficher toutes les notifications",
+      "LOADING_UNREAD_MESSAGE": "Chargement des notifications non lues...",
+      "EMPTY_MESSAGE": "Vous n'avez aucune notification non lue"
     },
     "LIST": {
       "LOADING_MESSAGE": "Chargement des notifications...",
@@ -95,58 +95,58 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "TEXT": "Disconnected from Atoomo"
+      "TEXT": "Déconnecté d'Atoomo"
     },
     "BUTTON": {
-      "REFRESH": "Refresh"
+      "REFRESH": "Rafraichir"
     }
   },
   "COMMAND_BAR": {
-    "SEARCH_PLACEHOLDER": "Search or jump to",
+    "SEARCH_PLACEHOLDER": "Rechercher ou accéder à",
     "SECTIONS": {
       "GENERAL": "General",
       "REPORTS": "Rapports",
       "CONVERSATION": "Conversation",
-      "CHANGE_ASSIGNEE": "Change Assignee",
+      "CHANGE_ASSIGNEE": "Changer l'assigner",
       "CHANGE_TEAM": "Changer d’équipe",
-      "ADD_LABEL": "Add label to the conversation",
-      "REMOVE_LABEL": "Remove label from the conversation",
+      "ADD_LABEL": "Ajouter une étiquette à cette conversation",
+      "REMOVE_LABEL": "Retirer l'étiquette sur cette conversation",
       "SETTINGS": "Paramètres"
     },
     "COMMANDS": {
       "GO_TO_CONVERSATION_DASHBOARD": "Aller au tableau de bord des conversations",
       "GO_TO_CONTACTS_DASHBOARD": "Aller au tableau de bord des contacts",
-      "GO_TO_REPORTS_OVERVIEW": "Go to Reports Overview",
-      "GO_TO_CONVERSATION_REPORTS": "Go to Conversation Reports",
-      "GO_TO_AGENT_REPORTS": "Go to Agent Reports",
-      "GO_TO_LABEL_REPORTS": "Go to Label Reports",
-      "GO_TO_INBOX_REPORTS": "Go to Inbox Reports",
-      "GO_TO_TEAM_REPORTS": "Go to Team Reports",
-      "GO_TO_SETTINGS_AGENTS": "Go to Agent Settings",
-      "GO_TO_SETTINGS_TEAMS": "Go to Team Settings",
-      "GO_TO_SETTINGS_INBOXES": "Go to Inbox Settings",
-      "GO_TO_SETTINGS_LABELS": "Go to Label Settings",
-      "GO_TO_SETTINGS_CANNED_RESPONSES": "Go to Canned Response Settings",
-      "GO_TO_SETTINGS_APPLICATIONS": "Go to Application Settings",
-      "GO_TO_SETTINGS_ACCOUNT": "Go to Account Settings",
-      "GO_TO_SETTINGS_PROFILE": "Go to Profile Settings",
-      "GO_TO_NOTIFICATIONS": "Go to Notifications",
-      "ADD_LABELS_TO_CONVERSATION": "Add label to the conversation",
-      "ASSIGN_AN_AGENT": "Assign an agent",
-      "ASSIGN_A_TEAM": "Assign a team",
-      "MUTE_CONVERSATION": "Mute conversation",
-      "UNMUTE_CONVERSATION": "Unmute conversation",
-      "REMOVE_LABEL_FROM_CONVERSATION": "Remove label from the conversation",
+      "GO_TO_REPORTS_OVERVIEW": "Aller à l'aperçu des rapports",
+      "GO_TO_CONVERSATION_REPORTS": "Aller aux rapports de conversation",
+      "GO_TO_AGENT_REPORTS": "Aller aux rapports des conseillers",
+      "GO_TO_LABEL_REPORTS": "Aller aux rapports d'étiquette",
+      "GO_TO_INBOX_REPORTS": "Aller aux rapports de la boîte de réception",
+      "GO_TO_TEAM_REPORTS": "Aller aux rapports d'équipe",
+      "GO_TO_SETTINGS_AGENTS": "Aller aux paramètres du conseiler",
+      "GO_TO_SETTINGS_TEAMS": "Aller aux paramètres de l'équipe",
+      "GO_TO_SETTINGS_INBOXES": "Aller aux paramètres de la boîte de réception",
+      "GO_TO_SETTINGS_LABELS": "Aller aux paramètres de l'étiquette",
+      "GO_TO_SETTINGS_CANNED_RESPONSES": "Aller aux paramètres de réponse standardisée",
+      "GO_TO_SETTINGS_APPLICATIONS": "Aller aux paramètres de l'application",
+      "GO_TO_SETTINGS_ACCOUNT": "Aller aux paramètres du compte",
+      "GO_TO_SETTINGS_PROFILE": "Aller aux paramètres du profil",
+      "GO_TO_NOTIFICATIONS": "Aller aux notifications",
+      "ADD_LABELS_TO_CONVERSATION": "Ajouter un libellé à la conversation",
+      "ASSIGN_AN_AGENT": "Attribuer un conseiller",
+      "ASSIGN_A_TEAM": "Attribuer une équipe",
+      "MUTE_CONVERSATION": "Mettre la conversation en sourdine",
+      "UNMUTE_CONVERSATION": "Réactiver la conversation",
+      "REMOVE_LABEL_FROM_CONVERSATION": "Supprimer le libellé de la conversation",
       "REOPEN_CONVERSATION": "Reprendre la conversation",
       "RESOLVE_CONVERSATION": "Reprendre la conversation",
-      "SEND_TRANSCRIPT": "Send an email transcript",
-      "SNOOZE_CONVERSATION": "Snooze Conversation",
-      "UNTIL_NEXT_REPLY": "Until next reply",
-      "UNTIL_NEXT_WEEK": "Until next week",
-      "UNTIL_TOMORROW": "Until tomorrow"
+      "SEND_TRANSCRIPT": "Envoyer une transcription par e-mail",
+      "SNOOZE_CONVERSATION": "Répéter la conversation",
+      "UNTIL_NEXT_REPLY": "Jusqu'à la prochaine réponse",
+      "UNTIL_NEXT_WEEK": "Jusqu'à la semaine prochaine",
+      "UNTIL_TOMORROW": "Jusqu'à demain"
     }
   },
   "DASHBOARD_APPS": {
-    "LOADING_MESSAGE": "Loading Dashboard App..."
+    "LOADING_MESSAGE": "Chargement de l'application Tableau de bord..."
   }
 }
