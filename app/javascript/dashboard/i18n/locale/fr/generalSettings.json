@@ -22,7 +22,7 @@
         "NOTE": ""
       },
       "ACCOUNT_ID": {
-        "TITLE": "Account ID",
+        "TITLE": "Identifiant de compte",
         "NOTE": "This ID is required if you are building an API based integration"
       },
       "NAME": {

@@ -155,6 +155,9 @@ fr:
     fullcontact:
       name: "Fullcontact"
       description: "L'intégration FullContact permet d'enrichir les profils de visiteurs. Identifiez les utilisateurs dès qu'ils partagent leur adresse de courriel et offrez-leur un service client sur mesure. Connectez FullContact à votre compte en partageant la clé API FullContact."
+    google_translate:
+      name: "Google Translate"
+      description: "Facilitez la traduction des messages par les agents en ajoutant une intégration de Google Traduction. Google Translate permet d'identifier automatiquement la langue et de la convertir dans la langue choisie par l'administrateur de l'agent/du compte."
   public_portal:
     search:
       search_placeholder: Rechercher un article par titre ou contenu...

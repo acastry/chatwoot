@@ -396,7 +396,7 @@
     "TABLE": {
       "HEADER": {
         "CONTACT_NAME": "Contact",
-        "AGENT_NAME": "Agent assigné",
+        "AGENT_NAME": "Conseiller assigné",
         "RATING": "Note",
         "FEEDBACK_TEXT": "Commentaire sur la rétroaction"
       }
