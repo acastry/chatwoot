@@ -22,7 +22,7 @@ export default {
     {
       path: frontendURL('accounts/:accountId/settings'),
       name: 'settings_home',
-      roles: ['administrator', 'agent'],
+      roles: ['administrator', 'agent', 'client'],
       redirect: () => {
         if (store.getters.getCurrentRole === 'administrator') {
           return frontendURL('accounts/:accountId/settings/general');

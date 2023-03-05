@@ -10,10 +10,10 @@ import { validateLoggedInRoutes } from '../helper/routeHelpers';
 import AnalyticsHelper from '../helper/AnalyticsHelper';
 
 const routes = [...login.routes, ...dashboard.routes, ...authRoute.routes];
-
 window.roleWiseRoutes = {
   agent: [],
   administrator: [],
+  client: [],
 };
 
 // generateRoleWiseRoute - updates window object with agent/admin route

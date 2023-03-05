@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2023_02_09_033203) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "pgcrypto"
-  enable_extension "plpgsql" 
+  enable_extension "plpgsql"
 
   create_table "access_tokens", force: :cascade do |t|
     t.string "owner_type"

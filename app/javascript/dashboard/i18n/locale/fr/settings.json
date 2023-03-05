@@ -197,9 +197,9 @@
     "SETTINGS": "Paramètres",
     "CONTACTS": "Contacts",
     "HOME": "Accueil",
-    "AGENTS": "Agents",
+    "AGENTS": "Conseillers",
     "ATOOMO": {
-      "CALENDAR": "CALENDAR"
+      "CALENDAR": "Agenda"
     },
     "AGENT_BOTS": "Bots",
     "INBOXES": "Boîtes de réception",
@@ -223,11 +223,11 @@
     "NEW_TEAM": "Créer une équipe",
     "NEW_INBOX": "Nouvelle boîte de réception",
     "REPORTS_CONVERSATION": "Conversations",
-    "CSAT": "CSAT",
+    "CSAT": "Satisfaction",
     "CAMPAIGNS": "Campagnes",
     "ONGOING": "En cours",
     "ONE_OFF": "Isolées",
-    "REPORTS_AGENT": "Agents",
+    "REPORTS_AGENT": "Conseillers",
     "REPORTS_LABEL": "Étiquettes",
     "REPORTS_INBOX": "Boîte de réception",
     "REPORTS_TEAM": "Équipes",

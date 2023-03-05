@@ -2,21 +2,21 @@
   "INTEGRATION_SETTINGS": {
     "HEADER": "Intégrations",
     "WEBHOOK": {
-      "SUBSCRIBED_EVENTS": "Subscribed Events",
+      "SUBSCRIBED_EVENTS": "Événements auxquels vous êtes abonné",
       "FORM": {
         "CANCEL": "Annuler",
         "DESC": "Les événements Webhook vous fournissent des informations en temps réel sur ce qui se passe dans votre compte Atoomo. Veuillez entrer une URL valide pour configurer un callback.",
         "SUBSCRIPTIONS": {
-          "LABEL": "Events",
-          "EVENTS": {
-            "CONVERSATION_CREATED": "Conversation Created",
-            "CONVERSATION_STATUS_CHANGED": "Conversation Status Changed",
-            "CONVERSATION_UPDATED": "Conversation Updated",
-            "MESSAGE_CREATED": "Message created",
-            "MESSAGE_UPDATED": "Message updated",
-            "WEBWIDGET_TRIGGERED": "Live chat widget opened by the user",
-            "CONTACT_CREATED": "Contact created",
-            "CONTACT_UPDATED": "Contact updated"
+          "LABEL": "Événements",
+          "ÉVÉNEMENTS": {
+            "CONVERSATION_CREATED": "Conversation créée",
+            "CONVERSATION_STATUS_CHANGED": "Statut de la conversation modifié",
+            "CONVERSATION_UPDATED": "Conversation mise à jour",
+            "MESSAGE_CREATED": "Message créé",
+            "MESSAGE_UPDATED": "Message mis à jour",
+            "WEBWIDGET_TRIGGERED": "Widget de chat en direct ouvert par l'utilisateur",
+            "CONTACT_CREATED": "Contact créé",
+            "CONTACT_UPDATED": "Contact mis à jour"
           }
         },
         "END_POINT": {
@@ -75,15 +75,15 @@
     "SLACK": {
       "HELP_TEXT": {
         "TITLE": "Utilisation de l'intégration Slack",
-        "BODY": "<br/><p>Atoomo va maintenant synchroniser toutes les conversations entrantes dans le canal <b><i>customer-conversations</i></b> à l'intérieur de Workspace Sack.</p><p>Répondre à un fil de conversation dans le canal Slack <b><i>customer-conversations</i></b> créera une réponse au client via chatwoot.</p><p>Commencez les réponses avec <b><i>note :</i></b> pour créer des notes privées au lieu de réponses.</p><p>Si le répondant sur Slack a un profil d'agent dans le chat avec la même adresse email, les réponses seront associées en conséquence.</p><p>Lorsque le répondant n'a pas de profil d'agent associé, les réponses seront faites avec le profil du bot.</p>"
+        "BODY": "<br/><p>Atoomo va maintenant synchroniser toutes les conversations entrantes dans le canal <b><i>customer-conversations</i></b> à l'intérieur de Workspace Sack.</p><p>Répondre à un fil de conversation dans le canal Slack <b><i>customer-conversations</i></b> créera une réponse au client via chatwoot.</p><p>Commencez les réponses avec <b><i>note :</i></b> pour créer des notes privées au lieu de réponses.</p><p>Si le répondant sur Slack a un profil de conseiller dans le chat avec la même adresse email, les réponses seront associées en conséquence.</p><p>Lorsque le répondant n'a pas de profil de conseiller associé, les réponses seront faites avec le profil du bot.</p>"
       }
     },
     "DYTE": {
-      "CLICK_HERE_TO_JOIN": "Click here to join",
-      "LEAVE_THE_ROOM": "Leave the room",
-      "START_VIDEO_CALL_HELP_TEXT": "Start a new video call with the customer",
-      "JOIN_ERROR": "There was an error joining the call, please try again",
-      "CREATE_ERROR": "There was an error creating a meeting link, please try again"
+      "CLICK_HERE_TO_JOIN": "Cliquez ici pour rejoindre",
+      "LEAVE_THE_ROOM": "Quitter la pièce",
+      "START_VIDEO_CALL_HELP_TEXT": "Démarrer un nouvel appel vidéo avec le client",
+      "JOIN_ERROR": "Une erreur s'est produite lors de la connexion à l'appel, veuillez réessayer",
+      "CREATE_ERROR": "Une erreur s'est produite lors de la création d'un lien de réunion, veuillez réessayer"
     },
     "DELETE": {
       "BUTTON_TEXT": "Supprimer",
@@ -95,49 +95,49 @@
       "BUTTON_TEXT": "Connecter"
     },
     "DASHBOARD_APPS": {
-      "TITLE": "Dashboard Apps",
-      "HEADER_BTN_TXT": "Add a new dashboard app",
-      "SIDEBAR_TXT": "<p><b>Dashboard Apps</b></p><p>Dashboard Apps allow organizations to embed an application inside the Atoomo dashboard to provide the context for customer support agents. This feature allows you to create an application independently and embed that inside the dashboard to provide user information, their orders, or their previous payment history.</p><p>When you embed your application using the dashboard in Atoomo, your application will get the context of the conversation and contact as a window event. Implement a listener for the message event on your page to receive the context.</p><p>To add a new dashboard app, click on the button 'Add a new dashboard app'.</p>",
-      "DESCRIPTION": "Dashboard Apps allow organizations to embed an application inside the dashboard to provide the context for customer support agents. This feature allows you to create an application independently and embed that to provide user information, their orders, or their previous payment history.",
-      "LIST": {
-        "404": "There are no dashboard apps configured on this account yet",
-        "LOADING": "Fetching dashboard apps...",
+      "TITLE": "Applications de tableau de bord",
+      "HEADER_BTN_TXT": "Ajouter une nouvelle application de tableau de bord",
+      "SIDEBAR_TXT": "<p><b>Applications de tableau de bord</b></p><p>Les applications de tableau de bord permettent aux organisations d'intégrer une application dans le tableau de bord d'Atoomo pour fournir le contexte aux conseillers du support client. Cette fonctionnalité vous permet de créez une application de manière indépendante et intégrez-la dans le tableau de bord pour fournir des informations sur les utilisateurs, leurs commandes ou leur historique de paiement précédent.</p><p>Lorsque vous intégrez votre application à l'aide du tableau de bord dans Atoomo, votre application obtiendra le contexte du conversation et contact en tant qu'événement de fenêtre. Implémentez un écouteur pour l'événement de message sur votre page afin de recevoir le contexte.</p><p>Pour ajouter une nouvelle application de tableau de bord, cliquez sur le bouton \"Ajouter une nouvelle application de tableau de bord\".< /p>",
+      "DESCRIPTION": "Les applications de tableau de bord permettent aux organisations d'intégrer une application dans le tableau de bord pour fournir le contexte aux conseillers du support client. Cette fonctionnalité vous permet de créer une application indépendamment et de l'intégrer pour fournir des informations sur les utilisateurs, leurs commandes ou leur historique de paiement précédent .",
+      "LISTE": {
+        "404": "Il n'y a pas encore d'applications de tableau de bord configurées sur ce compte",
+        "LOADING": "Récupération des applications du tableau de bord...",
         "TABLE_HEADER": [
           "Nom",
-          "Endpoint"
+          "Point final"
         ],
-        "EDIT_TOOLTIP": "Edit app",
-        "DELETE_TOOLTIP": "Delete app"
+        "EDIT_TOOLTIP": "Modifier l'application",
+        "DELETE_TOOLTIP": "Supprimer l'application"
       },
       "FORM": {
         "TITLE_LABEL": "Nom",
-        "TITLE_PLACEHOLDER": "Enter a name for your dashboard app",
-        "TITLE_ERROR": "A name for the dashboard app is required",
-        "URL_LABEL": "Endpoint",
-        "URL_PLACEHOLDER": "Enter the endpoint URL where your app is hosted",
-        "URL_ERROR": "A valid URL is required"
+        "TITLE_PLACEHOLDER": "Entrez un nom pour votre application de tableau de bord",
+        "TITLE_ERROR": "Un nom pour l'application de tableau de bord est requis",
+        "URL_LABEL": "Point de terminaison",
+        "URL_PLACEHOLDER": "Entrez l'URL du point de terminaison où votre application est hébergée",
+        "URL_ERROR": "Une URL valide est requise"
       },
       "CREATE": {
-        "HEADER": "Add a new dashboard app",
+        "HEADER": "Ajouter une nouvelle application de tableau de bord",
         "FORM_SUBMIT": "Envoyer",
         "FORM_CANCEL": "Annuler",
-        "API_SUCCESS": "Dashboard app configured successfully",
+        "API_SUCCESS": "Application de tableau de bord configurée avec succès",
         "API_ERROR": "We couldn't create an app. Please try again later"
       },
       "UPDATE": {
-        "HEADER": "Edit dashboard app",
+        "HEADER": "Modifier l'application du tableau de bord",
         "FORM_SUBMIT": "Mettre à jour",
         "FORM_CANCEL": "Annuler",
-        "API_SUCCESS": "Dashboard app updated successfully",
-        "API_ERROR": "We couldn't update the app. Please try again later"
+        "API_SUCCESS": "L'application Dashboard a été mise à jour avec succès",
+        "API_ERROR": "Nous n'avons pas pu mettre à jour l'application. Veuillez réessayer plus tard"
       },
       "DELETE": {
-        "CONFIRM_YES": "Yes, delete it",
-        "CONFIRM_NO": "No, keep it",
+        "CONFIRM_YES": "Oui, supprimez-le",
+        "CONFIRM_NO": "Non, gardez-le",
         "TITLE": "Confirmer la suppression",
-        "MESSAGE": "Are you sure to delete the app - %{appName}?",
-        "API_SUCCESS": "Dashboard app deleted successfully",
-        "API_ERROR": "We couldn't delete the app. Please try again later"
+        "MESSAGE": "Êtes-vous sûr de vouloir supprimer l'application - %{appName} ?",
+        "API_SUCCESS": "L'application Dashboard a été supprimée avec succès",
+        "API_ERROR": "Nous n'avons pas pu supprimer l'application. Veuillez réessayer plus tard"
       }
     }
   }

@@ -90,6 +90,10 @@ export default {
           name: 'agent',
           label: this.$t('AGENT_MGMT.AGENT_TYPES.AGENT'),
         },
+        {
+          name: 'client',
+          label: this.$t('AGENT_MGMT.AGENT_TYPES.CLIENT'),
+        },
       ],
       show: true,
     };

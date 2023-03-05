@@ -114,6 +114,12 @@ export default {
     this.$watch('chatList.length', () => {
       this.setActiveChat();
     });
+    if (this.$store.getters.getCurrentRole === 'client') {
+      if (this.$route.name !== 'account_overview_reports') {
+        this.$router.push({ name: 'account_overview_reports' });
+      }
+    }    
+        
   },
 
   methods: {
