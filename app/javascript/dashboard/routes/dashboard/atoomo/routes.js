@@ -6,7 +6,7 @@ export const routes = [
   {
     path: frontendURL('accounts/:accountId/calendar'),
     name: 'atoomo_calendar',
-    roles: ['administrator', 'agent'],
+    roles: ['administrator', 'agent', 'client'],
     component: CalendarView,
   }
 ];

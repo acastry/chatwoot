@@ -6,7 +6,8 @@
     "SIDEBAR_TXT": "<p><b>Agents</b></p> <p> Un <b>conseiller</b> est un membre de votre équipe d'assistance clientèle. </p><p> Les conseillers pourront voir et répondre aux messages de vos utilisateurs. La liste montre tous les conseillers actuellement dans votre compte. </p><p> Cliquez sur <b>Ajouter un conseiller</b> pour ajouter un nouveau conseiller. Le conseiller que vous ajoutez recevra un courriel avec un lien de confirmation pour activer son compte, après quoi il pourra accéder à Atoomo et répondre aux messages. </p><p> L'accès aux fonctionnalités de Atoomo est basé sur les rôles suivants. </p><p> <b>Agent</b> - Les conseillers ayant ce rôle ne peuvent accéder qu'aux boîtes de réception, aux rapports et aux conversations. Ils peuvent assigner des conversations à d'autres agents ou eux-mêmes et résoudre des conversations.</p><p> <b>Administrateur</b> - Administrateur aura accès à toutes les fonctionnalités de Atoomo activées pour votre compte, y compris les paramètres, ainsi que tous les privilèges d'un agent normal.</p>",
     "AGENT_TYPES": {
       "ADMINISTRATOR": "Administrateur",
-      "AGENT": "Agent"
+      "AGENT": "Agent",
+      "CLIENT": "Client"
     },
     "LIST": {
       "404": "Il n'y a aucun conseillers associé à ce compte",
