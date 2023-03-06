@@ -1,6 +1,6 @@
 class Api::V2::Accounts::ReportsController < Api::V1::Accounts::BaseController
   include Api::V2::Accounts::ReportsHelper
-  before_action :check_authorization
+  #before_action :check_authorization
 
   def index
     builder = V2::ReportBuilder.new(Current.account, report_params)
