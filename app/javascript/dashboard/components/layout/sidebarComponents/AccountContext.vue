@@ -23,6 +23,14 @@
       </div>
     </transition>
   </div>
+  <div
+    v-else
+    class="account-context--group atoomo"
+  >
+    <h3 class="account-context--name text-ellipsis">
+      {{ account.name }}
+    </h3>  
+  </div>  
 </template>
 <script>
 import { mapGetters } from 'vuex';
@@ -103,5 +111,9 @@ export default {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+.account-context--group.atoomo{
+  border:0;
+  background:none;
 }
 </style>
