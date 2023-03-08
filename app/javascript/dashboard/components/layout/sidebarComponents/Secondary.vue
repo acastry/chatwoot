@@ -1,5 +1,5 @@
 <template>
-  <div v-if="hasSecondaryMenu" class="main-nav secondary-menu">
+  <div class="main-nav secondary-menu">
     <account-context @toggle-accounts="toggleAccountModal" />
     <transition-group name="menu-list" tag="ul" class="menu vertical">
       <secondary-nav-item
