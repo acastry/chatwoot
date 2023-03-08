@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="ashowShowCurrentAccountContext"
+    v-if="showShowCurrentAccountContext"
     class="account-context--group"
     @mouseover="setShowSwitch"
     @mouseleave="resetShowSwitch"
