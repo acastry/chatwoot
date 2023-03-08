@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="showShowCurrentAccountContext"
+    v-if="atoomo_desactive_showShowCurrentAccountContext"
     class="account-context--group"
     @mouseover="setShowSwitch"
     @mouseleave="resetShowSwitch"
@@ -24,6 +24,7 @@
     </transition>
   </div>
   <div
+    v-else
     class="account-context--group atoomo"
   >
     <h3 class="account-context--name text-ellipsis">
