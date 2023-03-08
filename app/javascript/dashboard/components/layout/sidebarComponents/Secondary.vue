@@ -1,7 +1,7 @@
 <template>
   <div class="main-nav secondary-menu">
     <account-context @toggle-accounts="toggleAccountModal" />
-    <transition-group name="menu-list" tag="ul" class="menu vertical">
+    <transition-group v-if="hasSecondaryMenu" name="menu-list" tag="ul" class="menu vertical">
       <secondary-nav-item
         v-for="menuItem in accessibleMenuItems"
         :key="menuItem.toState"
