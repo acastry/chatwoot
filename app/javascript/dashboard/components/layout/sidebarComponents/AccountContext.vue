@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="showShowCurrentAccountContext"
+    v-if="atoomo_desactive_showShowCurrentAccountContext"
     class="account-context--group"
     @mouseover="setShowSwitch"
     @mouseleave="resetShowSwitch"
