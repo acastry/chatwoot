@@ -1,10 +1,11 @@
 <template>
   <div class="main-nav secondary-menu">
+  <h1>zeizeufhiuzhef</h1>
     <div
     class="atoomo-account"
   >
     <h3 class="account-context--name text-ellipsis">
-      {{ account.name }}
+    zefzefizefiuzfiuzefiuzeifuzeiufzeiufz
     </h3>  
   </div> 
     <account-context v-if="hasSecondaryMenu" @toggle-accounts="toggleAccountModal" />
