@@ -1,6 +1,13 @@
 <template>
   <div class="main-nav secondary-menu">
-    <account-context @toggle-accounts="toggleAccountModal" />
+    <div
+    class="atoomo-account"
+  >
+    <h3 class="account-context--name text-ellipsis">
+      {{ account.name }}
+    </h3>  
+  </div> 
+    <account-context v-if="hasSecondaryMenu" @toggle-accounts="toggleAccountModal" />
     <transition-group v-if="hasSecondaryMenu" name="menu-list" tag="ul" class="menu vertical">
       <secondary-nav-item
         v-for="menuItem in accessibleMenuItems"
@@ -64,6 +71,7 @@ export default {
   },
   computed: {
     ...mapGetters({
+      account: 'getCurrentAccount',
       isFeatureEnabledonAccount: 'accounts/isFeatureEnabledonAccount',
     }),
     hasSecondaryMenu() {
@@ -272,4 +280,17 @@ export default {
     overflow-y: auto;
   }
 }
+
+.atoomo-account {
+  font-size: var(--font-size-mini);
+  padding: var(--space-small);
+  margin: var(--space-small) var(--space-small) 0 var(--space-small);
+  position: relative;
+
+  .account-context--name {
+    font-weight: var(--font-weight-medium);
+    margin-bottom: 0;
+  }
+}
+
 </style>
