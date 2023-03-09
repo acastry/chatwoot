@@ -49,8 +49,7 @@ class DashboardController < ActionController::Base
       'CSML_EDITOR_HOST'
     ).merge(app_config)
 
- #   if request.parameters["params"] and request.parameters["params"].match(/^accounts\/(\d+)(?:\/(.+))?$/)
-    if request.parameters["params"].match(/^accounts\/(\d+)(?:\/(.+))?$/)
+    if request.parameters["params"] and request.parameters["params"].match(/^accounts\/(\d+)(?:\/(.+))?$/)
       account_number = $1.to_i
       # account_number = 38439
       account = Account.find_by(id: account_number)
