@@ -98,6 +98,8 @@ export default {
       this.setLocale(locale);
       this.latestChatwootVersion = latestChatwootVersion;
       vueActionCable.init(pubsubToken);
+      const account = this.getAccount(this.currentAccountId);
+      if (account) document.title = document.title + ' - ' + document.title;
     },
   },
 };

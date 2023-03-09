@@ -49,16 +49,16 @@ class DashboardController < ActionController::Base
       'CSML_EDITOR_HOST'
     ).merge(app_config)
 
-    p request.parameters["params"]
-    p request.parameters["params"].match(/^accounts\/(\d+)(?:\/(.+))?$/)
+#    p request.parameters["params"]
+#    p request.parameters["params"].match(/^accounts\/(\d+)(?:\/(.+))?$/)
 
     if request.parameters["params"] and request.parameters["params"].match(/^accounts\/(\d+)(?:\/(.+))?$/)
       account_number = $1.to_i
       # account_number = 38439
-      p request.parameters["params"]
+ #     p request.parameters["params"]
       account = Account.find_by(id: account_number)
-      p account
-      puts "pppppppppppp"
+#      p account
+#      puts "pppppppppppp"
       if account
         @global_config["INSTALLATION_NAME"] = account.name + " - " + @global_config["INSTALLATION_NAME"]
       end
