@@ -1,6 +1,6 @@
 <template>
   <div
-    v-if="atoomo_desactive_showShowCurrentAccountContext"
+    v-if="1 == 2 && showShowCurrentAccountContext"
     class="account-context--group"
     @mouseover="setShowSwitch"
     @mouseleave="resetShowSwitch"
@@ -23,14 +23,11 @@
       </div>
     </transition>
   </div>
-  <div
-    v-else
-    class="account-context--group atoomo"
-  >
-    <h3 class="account-context--name text-ellipsis">
+  <div v-else class="account-context--group atoomo">
+    <h4 class="account-context--name text-ellipsis">
       {{ account.name }}
-    </h3>  
-  </div>  
+    </h4>
+  </div>
 </template>
 <script>
 import { mapGetters } from 'vuex';
@@ -112,8 +109,8 @@ export default {
 .fade-leave-to {
   opacity: 0;
 }
-.account-context--group.atoomo{
-  border:0;
-  background:none;
+.account-context--group.atoomo {
+  border: 0;
+  background: none;
 }
 </style>
