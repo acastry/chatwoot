@@ -9,16 +9,14 @@ class DashboardController < ActionController::Base
 
   layout 'vueapp'
 
-  def index; 
+  def index
     # if !@user
     #   return
     # end
     if @user
-      account_user = AccountUser.find_by(user_id: @user.id) 
-      to_path = '/app/accounts/'+account_user.account_id.to_s+'/reports/overview'       
-      if account_user.role == "client" && request.path != to_path
-        redirect_to to_path
-      end
+      account_user = AccountUser.find_by(user_id: @user.id)
+      to_path = '/app/accounts/' + account_user.account_id.to_s + '/reports/overview'
+      redirect_to to_path if account_user.role == 'client' && request.path != to_path
     end
   end
 
@@ -49,19 +47,10 @@ class DashboardController < ActionController::Base
       'CSML_EDITOR_HOST'
     ).merge(app_config)
 
-#    p request.parameters["params"]
-#    p request.parameters["params"].match(/^accounts\/(\d+)(?:\/(.+))?$/)
-
-    if request.parameters["params"] and request.parameters["params"].match(/^accounts\/(\d+)(?:\/(.+))?$/)
-      account_number = $1.to_i
-      # account_number = 38439
- #     p request.parameters["params"]
+    if request.parameters['params'] and request.parameters['params'].match(%r{^accounts/(\d+)(?:/(.+))?$})
+      account_number = Regexp.last_match(1).to_i
       account = Account.find_by(id: account_number)
-#      p account
-#      puts "pppppppppppp"
-      if account
-        @global_config["INSTALLATION_NAME"] = account.name + " - " + @global_config["INSTALLATION_NAME"]
-      end
+      @global_config['INSTALLATION_NAME'] = account.name + ' - ' + @global_config['INSTALLATION_NAME'] if account
     end
   end
 
