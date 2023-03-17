@@ -1,5 +1,5 @@
 <template>
-  <div class="px-5">
+  <div class="px-5" style="display:none">
     <div class="flex items-center justify-between mb-4">
       <div
         class="max-w-xs"
@@ -92,5 +92,8 @@ export default {
       this.$emit('start-conversation');
     },
   },
+  mounted() {
+    this.startConversation();
+  },  
 };
 </script>
