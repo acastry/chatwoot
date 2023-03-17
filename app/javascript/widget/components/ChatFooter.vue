@@ -50,6 +50,9 @@ export default {
       default: '',
     },
   },
+  mounted() {
+    this.handleSendMessage(this.$t('WELCOME_BOT'));
+  },
   computed: {
     ...mapGetters({
       conversationAttributes: 'conversationAttributes/getConversationParams',
@@ -81,6 +84,7 @@ export default {
       'clearConversationAttributes',
     ]),
     async handleSendMessage(content) {
+            
       await this.sendMessage({
         content,
       });

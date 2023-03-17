@@ -12,6 +12,7 @@
         <date-separator :date="groupedMessage.date" />
         <chat-message
           v-for="message in groupedMessage.messages"
+          v-if="shouldExcludeMessage(message)"
           :key="message.id"
           :message="message"
         />
@@ -101,6 +102,9 @@ export default {
         this.fetchOldConversations({ before: this.earliestMessage.id });
         this.previousScrollHeight = this.$el.scrollHeight;
       }
+    },
+    shouldExcludeMessage(message) {
+      return message && message.content !== this.$t('WELCOME_BOT');
     },
   },
 };
