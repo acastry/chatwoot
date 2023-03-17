@@ -480,7 +480,8 @@
       "WHATSAPP_SECTION_TITLE": "Clé de l'API",
       "WHATSAPP_SECTION_UPDATE_TITLE": "Mettre à jour la clef de l'API",
       "WHATSAPP_SECTION_UPDATE_PLACEHOLDER": "Entrer la nouvelle clef API ici",
-      "WHATSAPP_SECTION_UPDATE_BUTTON": "Mettre à jour"
+      "WHATSAPP_SECTION_UPDATE_BUTTON": "Mettre à jour",
+      "UPDATE_PRE_CHAT_FORM_SETTINGS": "Mise à jour des paramètres du formulaire Pre Chat"
     },
     "AUTO_ASSIGNMENT": {
       "MAX_ASSIGNMENT_LIMIT": "Limite de l'auto assignement",
