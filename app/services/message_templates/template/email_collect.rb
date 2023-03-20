@@ -4,7 +4,7 @@ class MessageTemplates::Template::EmailCollect
   def perform
     ActiveRecord::Base.transaction do
       # conversation.messages.create!(ways_to_reach_you_message_params)
-      # conversation.messages.create!(email_input_box_template_message_params)
+      conversation.messages.create!(email_input_box_template_message_params)
     end
   rescue StandardError => e
     ChatwootExceptionTracker.new(e, account: conversation.account).capture_exception
