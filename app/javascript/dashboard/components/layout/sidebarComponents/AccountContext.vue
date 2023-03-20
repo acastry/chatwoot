@@ -23,7 +23,10 @@
       </div>
     </transition>
   </div>
-  <div v-else class="account-context--group atoomo">
+  <div
+    v-else-if="account.role != 'client'"
+    class="account-context--group atoomo"
+  >
     <h4 class="account-context--name text-ellipsis">
       {{ account.name }}
     </h4>
