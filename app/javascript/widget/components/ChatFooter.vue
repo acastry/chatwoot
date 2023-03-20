@@ -84,6 +84,10 @@ export default {
       'clearConversationAttributes',
     ]),
     async handleSendMessage(content) {
+
+      if(content == this.$t('WELCOME_BOT') && this.conversationSize > 2) {
+        return true;
+      }
             
       await this.sendMessage({
         content,
