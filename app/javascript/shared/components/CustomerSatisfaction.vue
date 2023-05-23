@@ -260,4 +260,10 @@ export default {
     }
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .customer-satisfaction .feedback-form input {
+    border-top: 1px solid var(--b-500);
+  }
+}
 </style>

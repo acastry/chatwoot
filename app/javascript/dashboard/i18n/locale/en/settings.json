@@ -160,6 +160,7 @@
   "COMPONENTS": {
     "CODE": {
       "BUTTON_TEXT": "Copy",
+      "CODEPEN": "Open in CodePen",
       "COPY_SUCCESSFUL": "Copied to clipboard"
     },
     "SHOW_MORE_BLOCK": {
@@ -201,6 +202,7 @@
       "CALENDAR": "CALENDAR"
     },
     "AGENT_BOTS": "Bots",
+    "AUDIT_LOGS": "Audit Logs",
     "INBOXES": "Inboxes",
     "NOTIFICATIONS": "Notifications",
     "CANNED_RESPONSES": "Canned Responses",

@@ -1,6 +1,8 @@
 class Api::V2::Accounts::ReportsController < Api::V1::Accounts::BaseController
   include Api::V2::Accounts::ReportsHelper
-  #before_action :check_authorization
+    include Api::V2::Accounts::HeatmapHelper
+
+  before_action :check_authorization
 
   def index
     builder = V2::ReportBuilder.new(Current.account, report_params)
@@ -30,6 +32,14 @@ class Api::V2::Accounts::ReportsController < Api::V1::Accounts::BaseController
   def teams
     @report_data = generate_teams_report
     generate_csv('teams_report', 'api/v2/accounts/reports/teams')
+  end
+
+  def conversation_traffic
+    @report_data = generate_conversations_heatmap_report
+    timezone_offset = (params[:timezone_offset] || 0).to_f
+    @timezone = ActiveSupport::TimeZone[timezone_offset]
+
+    generate_csv('conversation_traffic_reports', 'api/v2/accounts/reports/conversation_traffic')
   end
 
   def conversations
@@ -62,14 +72,16 @@ class Api::V2::Accounts::ReportsController < Api::V1::Accounts::BaseController
   def current_summary_params
     common_params.merge({
                           since: range[:current][:since],
-                          until: range[:current][:until]
+                          until: range[:current][:until],
+                          timezone_offset: params[:timezone_offset]
                         })
   end
 
   def previous_summary_params
     common_params.merge({
                           since: range[:previous][:since],
-                          until: range[:previous][:until]
+                          until: range[:previous][:until],
+                          timezone_offset: params[:timezone_offset]
                         })
   end
 
