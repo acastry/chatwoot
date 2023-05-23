@@ -72,13 +72,6 @@ export default {
       if (!this.hasAccounts) {
         this.showAddAccountModal = true;
       }
-      verifyServiceWorkerExistence(registration =>
-        registration.pushManager.getSubscription().then(subscription => {
-          if (subscription) {
-            registerSubscription();
-          }
-        })
-      );
     },
     currentAccountId() {
       if (this.currentAccountId) {
@@ -109,6 +102,14 @@ export default {
       vueActionCable.init(pubsubToken);
       const account = this.getAccount(this.currentAccountId);
       if (account) document.title = document.title + ' - ' + document.title;
+
+      verifyServiceWorkerExistence(registration =>
+        registration.pushManager.getSubscription().then(subscription => {
+          if (subscription) {
+            registerSubscription();
+          }
+        })
+      );
     },
   },
 };

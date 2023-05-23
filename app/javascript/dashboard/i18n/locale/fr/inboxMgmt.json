@@ -443,7 +443,8 @@
       "LABEL": "Fonctionnalités",
       "DISPLAY_FILE_PICKER": "Afficher le sélecteur de fichiers sur le widget",
       "DISPLAY_EMOJI_PICKER": "Afficher le sélecteur d'émoticônes sur le widget",
-      "ALLOW_END_CONVERSATION": "Autoriser les utilisateurs à mettre fin à la conversation à partir du widget"
+      "ALLOW_END_CONVERSATION": "Autoriser les utilisateurs à mettre fin à la conversation à partir du widget",
+      "USE_INBOX_AVATAR_FOR_BOT": "Use inbox name and avatar for the bot"
     },
     "SETTINGS_POPUP": {
       "MESSENGER_HEADING": "Script du Widget Web",
@@ -467,6 +468,7 @@
       "AUTO_ASSIGNMENT_SUB_TEXT": "Activer ou désactiver l'affectation automatique de nouvelles conversations aux conseillers ajoutés à cette boîte de réception.",
       "HMAC_VERIFICATION": "Validation de l'identité de l'utilisateur",
       "HMAC_DESCRIPTION": "Afin de valider l'identité de l'utilisateur, vous pouvez passer un `identifier_hash` pour chaque utilisateur. Vous pouvez générer un hachage HMAC sha256 en utilisant l'identifiant avec la clé indiquée ici.",
+      "HMAC_LINK_TO_DOCS": "You can read more here.",
       "HMAC_MANDATORY_VERIFICATION": "Forcer la validation de l'identité de l'utilisateur",
       "HMAC_MANDATORY_DESCRIPTION": "Si cette option est activée, les requêtes auxquelles il manque `identifier_hash` seront rejetées.",
       "INBOX_IDENTIFIER": "Identificateur de la boîte de réception",
@@ -481,7 +483,16 @@
       "WHATSAPP_SECTION_UPDATE_TITLE": "Mettre à jour la clef de l'API",
       "WHATSAPP_SECTION_UPDATE_PLACEHOLDER": "Entrer la nouvelle clef API ici",
       "WHATSAPP_SECTION_UPDATE_BUTTON": "Mettre à jour",
+      "WHATSAPP_WEBHOOK_TITLE": "Webhook Verify Token",
+      "WHATSAPP_WEBHOOK_SUBHEADER": "This token is used to verify the authenticity of the webhook endpoint.",
       "UPDATE_PRE_CHAT_FORM_SETTINGS": "Mise à jour des paramètres du formulaire Pre Chat"
+    },
+    "HELP_CENTER": {
+      "LABEL": "Help Center",
+      "PLACEHOLDER": "Select Help Center",
+      "SELECT_PLACEHOLDER": "Select Help Center",
+      "REMOVE": "Remove Help Center",
+      "SUB_TEXT": "Attach a Help Center with the inbox"
     },
     "AUTO_ASSIGNMENT": {
       "MAX_ASSIGNMENT_LIMIT": "Limite de l'auto assignement",
