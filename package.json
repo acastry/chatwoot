@@ -50,6 +50,7 @@
     "logrocket-vuex": "^0.0.3",
     "markdown-it": "^13.0.1",
     "markdown-it-link-attributes": "^4.0.1",
+    "marked": "^5.0.2",
     "md5": "^2.3.0",
     "ninja-keys": "^1.1.9",
     "opus-recorder": "^8.0.5",
