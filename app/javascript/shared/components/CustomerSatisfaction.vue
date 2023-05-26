@@ -57,13 +57,12 @@ import FluentIcon from 'shared/components/FluentIcon/Index.vue';
 import darkModeMixin from 'widget/mixins/darkModeMixin';
 import { getContrastingTextColor } from '@chatwoot/utils';
 import { getCsatMessage } from 'survey/api/survey';
-import { marked } from 'marked';
+import MarkdownIt from 'markdown-it';
 
 export default {
   components: {
     Spinner,
-    FluentIcon,
-    marked
+    FluentIcon
   },
   mixins: [darkModeMixin],
   props: {
@@ -114,7 +113,8 @@ export default {
         : this.$t('CSAT.TITLE');
     },
      parsedCsatMessage(){
-       return marked.parse(this.csatMessage);
+      const md = new MarkdownIt();
+      return md.render(this.csatMessage);
      }    
   },
 

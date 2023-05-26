@@ -65,7 +65,7 @@ import Banner from 'survey/components/Banner';
 import configMixin from 'shared/mixins/configMixin';
 import { getSurveyDetails, updateSurvey, getCsatMessage } from 'survey/api/survey';
 import alertMixin from 'shared/mixins/alertMixin';
-import { marked } from 'marked';
+import MarkdownIt from 'markdown-it';
 
 export default {
   name: 'Response',
@@ -74,8 +74,7 @@ export default {
     Rating,
     Spinner,
     Banner,
-    Feedback,
-    marked
+    Feedback
   },
   mixins: [alertMixin, configMixin],
   props: {
@@ -128,7 +127,8 @@ export default {
       return !!this.isRatingSubmitted;
     },
      parsedCsatMessage(){
-       return marked.parse(this.csatMessage);
+      const md = new MarkdownIt();
+      return md.render(this.csatMessage);
      },
     message() {
       if (this.errorMessage) {
