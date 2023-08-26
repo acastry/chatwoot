@@ -1,3 +1,5 @@
+# rubocop:disable Layout/LineLength
+
 # == Schema Information
 #
 # Table name: contacts
@@ -19,10 +21,14 @@
 #  index_contacts_on_account_id                          (account_id)
 #  index_contacts_on_lower_email_account_id              (lower((email)::text), account_id)
 #  index_contacts_on_name_email_phone_number_identifier  (name,email,phone_number,identifier) USING gin
+#  index_contacts_on_nonempty_fields                     (account_id,email,phone_number,identifier) WHERE (((email)::text <> ''::text) OR ((phone_number)::text <> ''::text) OR ((identifier)::text <> ''::text))
 #  index_contacts_on_phone_number_and_account_id         (phone_number,account_id)
+#  index_resolved_contact_account_id                     (account_id) WHERE (((email)::text <> ''::text) OR ((phone_number)::text <> ''::text) OR ((identifier)::text <> ''::text))
 #  uniq_email_per_account_contact                        (email,account_id) UNIQUE
 #  uniq_identifier_per_account_contact                   (identifier,account_id) UNIQUE
 #
+
+# rubocop:enable Layout/LineLength
 
 class Contact < ApplicationRecord
   include Avatarable
@@ -53,6 +59,14 @@ class Contact < ApplicationRecord
     order(
       Arel::Nodes::SqlLiteral.new(
         sanitize_sql_for_order("\"contacts\".\"last_activity_at\" #{direction}
+          NULLS LAST")
+      )
+    )
+  }
+  scope :order_on_created_at, lambda { |direction|
+    order(
+      Arel::Nodes::SqlLiteral.new(
+        sanitize_sql_for_order("\"contacts\".\"created_at\" #{direction}
           NULLS LAST")
       )
     )
@@ -136,7 +150,7 @@ class Contact < ApplicationRecord
   end
 
   def self.resolved_contacts
-    where("COALESCE(NULLIF(contacts.email,''),NULLIF(contacts.phone_number,''),NULLIF(contacts.identifier,'')) IS NOT NULL")
+    where("contacts.email <> '' OR contacts.phone_number <> '' OR contacts.identifier <> ''")
   end
 
   def discard_invalid_attrs
