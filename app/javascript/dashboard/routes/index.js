@@ -6,7 +6,7 @@ import store from '../store';
 import { validateLoggedInRoutes } from '../helper/routeHelpers';
 import AnalyticsHelper from '../helper/AnalyticsHelper';
 
-const routes = [...login.routes, ...dashboard.routes, ...authRoute.routes];
+const routes = [...dashboard.routes];
 window.roleWiseRoutes = {
   agent: [],
   administrator: [],
