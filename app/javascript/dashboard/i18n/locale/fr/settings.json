@@ -202,6 +202,9 @@
     "SETTINGS": "Paramètres",
     "CONTACTS": "Contacts",
     "HOME": "Accueil",
+    "ATOOMO": {
+      "CALENDAR": "Agenda"
+    },    
     "AGENTS": "Agents",
     "AGENT_BOTS": "Bots",
     "AUDIT_LOGS": "Journaux d'audit",
