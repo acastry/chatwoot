@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_04_152227) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_05_152227) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
   enable_extension "pg_trgm"
@@ -54,6 +54,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_04_152227) do
     t.jsonb "limits", default: {}
     t.jsonb "custom_attributes", default: {}
     t.integer "status", default: 0
+    t.string "calendar_page"
     t.index ["status"], name: "index_accounts_on_status"
   end
 

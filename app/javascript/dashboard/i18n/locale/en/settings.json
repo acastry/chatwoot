@@ -198,6 +198,9 @@
     "SETTINGS": "Settings",
     "CONTACTS": "Contacts",
     "HOME": "Home",
+    "ATOOMO": {
+      "CALENDAR": "CALENDAR"
+    },    
     "AGENTS": "Agents",
     "AGENT_BOTS": "Bots",
     "AUDIT_LOGS": "Audit Logs",
