@@ -42,6 +42,10 @@
         <fluent-icon v-else icon="chevron-right" />
       </button>
     </form>
+    <h5 class="csat_message"
+      v-if="isFeedbackSubmitted&&shouldShowCsatMesage"
+       v-html="parsedCsatMessage"
+    ></h5>    
   </div>
 </template>
 
@@ -52,6 +56,8 @@ import { CSAT_RATINGS } from 'shared/constants/messages';
 import FluentIcon from 'shared/components/FluentIcon/Index.vue';
 import darkModeMixin from 'widget/mixins/darkModeMixin';
 import { getContrastingTextColor } from '@chatwoot/utils';
+import { getCsatMessage } from 'survey/api/survey';
+import MarkdownIt from 'markdown-it';
 
 export default {
   components: {
@@ -74,6 +80,7 @@ export default {
       email: '',
       ratings: CSAT_RATINGS,
       selectedRating: null,
+      csatMessage: '',
       isUpdating: false,
       feedback: '',
     };
@@ -90,6 +97,9 @@ export default {
     isButtonDisabled() {
       return !(this.selectedRating && this.feedback);
     },
+    shouldShowCsatMesage() {
+      return this.selectedRating && this.selectedRating>3;
+    },     
     inputColor() {
       return `${this.$dm('bg-white', 'dark:bg-slate-600')}
         ${this.$dm('text-black-900', 'dark:text-slate-50')}`;
@@ -102,9 +112,13 @@ export default {
         ? this.$t('CSAT.SUBMITTED_TITLE')
         : this.$t('CSAT.TITLE');
     },
+    parsedCsatMessage(){
+    const md = new MarkdownIt();
+    return md.render(this.csatMessage);
+    }     
   },
 
-  mounted() {
+  mounted: async function() {
     if (this.isRatingSubmitted) {
       const {
         csat_survey_response: { rating, feedback_message },
@@ -112,6 +126,12 @@ export default {
       this.selectedRating = rating;
       this.feedback = feedback_message;
     }
+    try{
+    const csatmessage = await getCsatMessage({ uuid: this.messageId });
+    this.csatMessage = csatmessage?.data?.csat_message;
+    } catch (error) {
+    } finally {
+    }      
   },
 
   methods: {
@@ -171,7 +191,12 @@ export default {
     padding: $space-two $space-one 0;
     text-align: center;
   }
-
+  .csat_message {
+    font-size: $font-size-default;
+    padding: $space-two;
+    padding-top: 0;
+    text-align: left;
+  }
   .ratings {
     display: flex;
     justify-content: space-around;
