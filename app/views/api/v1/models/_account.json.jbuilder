@@ -13,6 +13,7 @@ json.features @account.enabled_features
 json.id @account.id
 json.locale @account.locale
 json.name @account.name
+json.calendar_page @account.calendar_page
 json.support_email @account.support_email
 json.status @account.status
 json.cache_keys @account.cache_keys
