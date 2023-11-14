@@ -3,6 +3,7 @@ import settings from './settings/settings.routes';
 import conversation from './conversation/conversation.routes';
 import { routes as searchRoutes } from '../../modules/search/search.routes';
 import { routes as contactRoutes } from './contacts/routes';
+import { routes as atoomoRoutes } from './atoomo/routes';
 import { routes as notificationRoutes } from './notifications/routes';
 import { frontendURL } from '../../helper/URLHelper';
 import helpcenterRoutes from './helpcenter/helpcenter.routes';
@@ -19,6 +20,7 @@ export default {
         ...conversation.routes,
         ...settings.routes,
         ...contactRoutes,
+        ...atoomoRoutes,
         ...searchRoutes,
         ...notificationRoutes,
       ],
@@ -26,7 +28,7 @@ export default {
     {
       path: frontendURL('accounts/:accountId/suspended'),
       name: 'account_suspended',
-      roles: ['administrator', 'agent'],
+      roles: ['administrator', 'agent', 'client'],
       component: Suspended,
     },
   ],
