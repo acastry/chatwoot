@@ -7,7 +7,7 @@ export default {
     {
       path: frontendURL('accounts/:accountId/profile'),
       name: 'profile_settings',
-      roles: ['administrator', 'agent'],
+      roles: ['administrator', 'agent', 'client'],
       component: SettingsContent,
       props: {
         headerTitle: 'PROFILE_SETTINGS.TITLE',
@@ -20,7 +20,7 @@ export default {
           path: 'settings',
           name: 'profile_settings_index',
           component: Index,
-          roles: ['administrator', 'agent'],
+          roles: ['administrator', 'agent', 'client'],
         },
       ],
     },

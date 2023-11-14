@@ -54,6 +54,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_13_072802) do
     t.jsonb "limits", default: {}
     t.jsonb "custom_attributes", default: {}
     t.integer "status", default: 0
+    t.string "calendar_page"
     t.index ["status"], name: "index_accounts_on_status"
   end
 
@@ -589,6 +590,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_10_13_072802) do
     t.bigint "portal_id"
     t.integer "sender_name_type", default: 0, null: false
     t.string "business_name"
+    t.string "csat_message"
     t.index ["account_id"], name: "index_inboxes_on_account_id"
     t.index ["channel_id", "channel_type"], name: "index_inboxes_on_channel_id_and_channel_type"
     t.index ["portal_id"], name: "index_inboxes_on_portal_id"
