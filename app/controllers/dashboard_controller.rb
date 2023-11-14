@@ -9,10 +9,24 @@ class DashboardController < ActionController::Base
 
   layout 'vueapp'
 
-  def index; end
+  def index
+    # if !@user
+    #   return
+    # end
+    if @user
+      account_user = AccountUser.find_by(user_id: @user.id)
+      to_path = '/app/accounts/' + account_user.account_id.to_s + '/reports/overview'
+      redirect_to to_path if account_user.role == 'client' && request.path != to_path
+    end
+  end
 
   private
 
+  def set_current_user
+    @user ||= current_user
+    Current.user = @user
+  end
+  
   def set_global_config
     @global_config = GlobalConfig.get(
       'LOGO', 'LOGO_DARK', 'LOGO_THUMBNAIL',
