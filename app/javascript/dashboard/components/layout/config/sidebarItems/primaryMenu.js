@@ -26,7 +26,7 @@ const primaryMenuItems = accountId => [
     featureFlag: FEATURE_FLAGS.REPORTS,
     toState: frontendURL(`accounts/${accountId}/reports`),
     toStateName: 'settings_account_reports',
-    roles: ['administrator'],
+    roles: ['administrator', 'client'],
   },
   {
     icon: 'megaphone',
