@@ -5492,6 +5492,10 @@
         "display_name": {
           "type": "string"
         },
+        "csat_message": {
+          "type": "string",
+          "description": "Welcome tagline to be displayed on the widget"
+        },         
         "email": {
           "type": "string"
         },
