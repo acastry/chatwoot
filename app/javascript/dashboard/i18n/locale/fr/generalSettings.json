@@ -92,7 +92,7 @@
   },
   "NETWORK": {
     "NOTIFICATION": {
-      "TEXT": "Déconnecté de Chatwoot"
+      "TEXT": "Déconnecté de Atoomo"
     },
     "BUTTON": {
       "REFRESH": "Actualiser"
