@@ -26,7 +26,7 @@ export default {
         {
           path: 'overview',
           name: 'account_overview_reports',
-          roles: ['administrator'],
+          roles: ['administrator', 'client'],
           component: LiveReports,
         },
       ],
@@ -43,7 +43,7 @@ export default {
         {
           path: 'conversation',
           name: 'conversation_reports',
-          roles: ['administrator'],
+          roles: ['administrator', 'client'],
           component: Index,
         },
       ],
@@ -60,7 +60,7 @@ export default {
         {
           path: 'csat',
           name: 'csat_reports',
-          roles: ['administrator'],
+          roles: ['administrator', 'client'],
           component: CsatResponses,
         },
       ],
@@ -77,7 +77,7 @@ export default {
         {
           path: 'agent',
           name: 'agent_reports',
-          roles: ['administrator'],
+          roles: ['administrator', 'client'],
           component: AgentReports,
         },
       ],
@@ -94,7 +94,7 @@ export default {
         {
           path: 'label',
           name: 'label_reports',
-          roles: ['administrator'],
+          roles: ['administrator', 'client'],
           component: LabelReports,
         },
       ],
@@ -111,7 +111,7 @@ export default {
         {
           path: 'inboxes',
           name: 'inbox_reports',
-          roles: ['administrator'],
+          roles: ['administrator', 'client'],
           component: InboxReports,
         },
       ],
@@ -127,7 +127,7 @@ export default {
         {
           path: 'teams',
           name: 'team_reports',
-          roles: ['administrator'],
+          roles: ['administrator', 'client'],
           component: TeamReports,
         },
       ],

@@ -2,7 +2,7 @@ class Api::V2::Accounts::ReportsController < Api::V1::Accounts::BaseController
   include Api::V2::Accounts::ReportsHelper
   include Api::V2::Accounts::HeatmapHelper
 
-  before_action :check_authorization
+  # before_action :check_authorization
 
   def index
     builder = V2::ReportBuilder.new(Current.account, report_params)
@@ -57,7 +57,7 @@ class Api::V2::Accounts::ReportsController < Api::V1::Accounts::BaseController
   end
 
   def check_authorization
-    raise Pundit::NotAuthorizedError unless Current.account_user.administrator?
+    raise Pundit::NotAuthorizedError unless Current.account_user.agent?
   end
 
   def common_params
