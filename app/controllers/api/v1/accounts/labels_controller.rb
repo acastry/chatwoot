@@ -1,7 +1,7 @@
 class Api::V1::Accounts::LabelsController < Api::V1::Accounts::BaseController
   before_action :current_account
   before_action :fetch_label, except: [:index, :create]
-  before_action :check_authorization
+  # before_action :check_authorization
 
   def index
     @labels = policy_scope(Current.account.labels)
