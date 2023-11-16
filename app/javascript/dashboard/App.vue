@@ -119,6 +119,9 @@ export default {
       this.latestChatwootVersion = latestChatwootVersion;
       vueActionCable.init(pubsubToken);
 
+      const account = this.getAccount(this.currentAccountId);
+      if (account) document.title = account.name + ' - ' + document.title;
+
       verifyServiceWorkerExistence(registration =>
         registration.pushManager.getSubscription().then(subscription => {
           if (subscription) {
