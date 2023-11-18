@@ -7,7 +7,7 @@ export default {
     {
       path: frontendURL('accounts/:accountId/dashboard'),
       name: 'home',
-      roles: ['administrator', 'agent'],
+      roles: ['administrator', 'agent', 'client'],
       component: ConversationView,
       props: () => {
         return { inboxId: 0 };
