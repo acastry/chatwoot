@@ -20,6 +20,15 @@ const primaryMenuItems = accountId => [
     roles: ['administrator', 'agent'],
   },
   {
+    icon: 'calendar-clock',
+    key: 'atoomo_calendar',
+    label: 'ATOOMO.CALENDAR',
+    featureFlag: FEATURE_FLAGS.REPORTS,
+    toState: frontendURL(`accounts/${accountId}/calendar`),
+    toStateName: 'atoomo_calendar',
+    roles: ['administrator', 'agent', 'client'],
+  },  
+  {
     icon: 'arrow-trending-lines',
     key: 'reports',
     label: 'REPORTS',
