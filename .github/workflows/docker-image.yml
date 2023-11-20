@@ -1,4 +1,4 @@
-name: ATOOMO Docker Build and Push
+name: ATOOMO Docker Build Tag Push
 
 on:
   push:
