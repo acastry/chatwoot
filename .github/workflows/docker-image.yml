@@ -28,3 +28,4 @@ jobs:
         TAG=$(echo "${GITHUB_REF##*/}-$(date +'%Y%m%d%H%M%S')")
         docker tag atoomo "atoomo:${TAG}"
         docker push "atoomo:${TAG}"
+
