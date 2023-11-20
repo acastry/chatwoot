@@ -31,4 +31,4 @@ jobs:
           file: docker/Dockerfile
           platforms: linux/amd64
           push: true
-          tags: "acastry/atoomo:dadafafa"
+          tags: $(echo "atoomo:${GITHUB_REF##*/}-$(date +'%Y%m%d%H%M%S')")
