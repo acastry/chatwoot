@@ -26,5 +26,5 @@ jobs:
     - name: Generate tag and push to Docker Hub
       run: |
         TAG=$(echo "${GITHUB_REF##*/}-$(date +'%Y%m%d%H%M%S')")
-        docker tag atoomo "${DOCKER_REPO}:${TAG}"
-        docker push "${DOCKER_REPO}:${TAG}"
+        docker tag atoomo "atoomo:${TAG}"
+        docker push "atoomo:${TAG}"
