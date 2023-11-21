@@ -40,4 +40,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            atoomo:${{ steps.prep.outputs.BUILD_ID }}  
+            acastry/atoomo:${{ steps.prep.outputs.BUILD_ID }}  
