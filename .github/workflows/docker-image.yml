@@ -31,4 +31,4 @@ jobs:
           file: docker/Dockerfile
           platforms: linux/amd64
           push: true
-          tags: $(echo "atoomo:${GITHUB_REF##*/}-$(date +'%Y%m%d%H%M%S')")
+          tags: {{ "atoomo:${GITHUB_REF##*/}-$(date +'%Y%m%d%H%M%S')" }}
